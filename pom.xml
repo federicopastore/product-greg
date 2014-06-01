@@ -47,6 +47,7 @@
         <module>modules/styles</module>
         <module>modules/dashboard</module>
         <module>modules/checkin-client</module>
+        <module>modules/checkin-client</module>
         <module>modules/juddi/juddi-listener</module>
         <module>modules/juddi/juddiv3-war</module>
         <module>modules/cmis/cmis-war</module>
