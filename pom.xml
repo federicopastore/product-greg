@@ -61,7 +61,6 @@
         <module>modules/login</module>
         <!--module>modules/distribution/src/main/resources/statistics</module-->
         <module>modules/distribution</module>
-        <module>modules/integration</module>
     </modules>
     <dependencyManagement>
         <dependencies>
