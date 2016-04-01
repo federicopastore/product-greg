@@ -1,6 +1,4 @@
 language: java
 jdk: oraclejdk7
-before_install:
-  - rm -fr ~/.m2/
 
 script: mvn clean install -Dmaven.test.skip=true -B -U
