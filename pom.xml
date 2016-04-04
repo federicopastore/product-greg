@@ -52,7 +52,6 @@
         <module>modules/cmis/cmis-war</module>
         <module>modules/company</module>
         <module>modules/caramel</module>
-        <module>modules/cmis/cmis-war</module>
         <!--module>modules/samples</module-->
         <module>modules/features</module>
         <module>modules/p2-profile-gen</module>
