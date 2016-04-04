@@ -10,3 +10,4 @@ target
 .idea
 atlassian-ide-plugin.xml
 modules/jaxwebapps/
+pom.xml
