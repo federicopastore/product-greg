@@ -45,7 +45,7 @@
 
     <modules>
         <module>modules/styles</module>
-        <module>modules/dashboard</module>
+        <!--module>modules/dashboard</module-->
         <module>modules/checkin-client</module>
         <module>modules/caramel</module>
 	<!--module>modules/checkin-client</module-->
