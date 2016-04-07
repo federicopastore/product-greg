@@ -1,0 +1,11 @@
+<serviceGroup>
+    <service name="TIBCOLoaderManager" scope="transportsession">
+        <transports>
+	      <transport>https</transport>
+	</transports>
+	<parameter name="ServiceClass">it.company.wso2.registry.integrations.tibco.App</parameter>
+    </service>				      
+	<parameter name="adminService" locked="true">true</parameter>
+	<parameter name="hiddenService" locked="true">true</parameter>
+        <parameter name="AuthorizationAction" locked="true">/permission/protected/manage</parameter>
+</serviceGroup>
