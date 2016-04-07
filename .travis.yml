@@ -1,6 +1,6 @@
 language: java
 jdk: oraclejdk7
-after_install:
+script:
   - ls -la .m2
   - echo "<settings></settings>" > ~/.m2/settings.xml
 
