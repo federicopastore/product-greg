@@ -1,4 +1,6 @@
 language: java
 jdk: oraclejdk7
+after_success:
+  - ls -la .m2
+  - echo "<settings></settings>" > ~/.m2/settings.xml
 
-script: "mvn --settings settings.xml clean install -Dmaven.test.skip=true -B -U"
