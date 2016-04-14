@@ -3,5 +3,4 @@ jdk: oraclejdk7
 before_install:
   - sed -i.bak -e 's|https://nexus.codehaus.org/snapshots/|http://maven.wso2.org/nexus/content/groups/wso2-public/|g' ~/.m2/settings.xml
   - sed -i.bak -e 's|https://oss.sonatype.org/content/repositories/snapshots/|https://maven.wso2.org/nexus/content/repositories/snapshots/|g' ~/.m2/settings.xml
-  - mvn clean site
 script: mvn clean install -Dmaven.test.skip=true -B
