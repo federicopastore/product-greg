@@ -465,6 +465,14 @@
                                     org.wso2.ciphertool:org.wso2.ciphertool.feature:${ciphertool.version}
                                 </feaureArtifactDef>
                             </featureArtifacts>
+							
+							
+				<!-- Company feature -->
+				<!--
+                                <feaureArtifactDef>
+                                    it.company.wso2.registry.integrations.tibco:TibcoManager.features:1.0
+                                </feaureArtifactDef>
+							-->
                         </configuration>
                     </execution>
                     <execution>
@@ -1763,6 +1771,7 @@
                                     <id>org.apache.axis2.transport.mail.feature.group</id>
                                     <version>${axis2-transports.wso2.version}</version>
                                 </feature>
+
 
 				<!--
                                 <feature>
