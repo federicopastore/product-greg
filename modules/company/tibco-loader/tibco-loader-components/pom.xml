@@ -15,12 +15,12 @@
 
 
   <modules>
-    <module>TibcoManager</module>
-    <module>TibcoManager.ui</module>
     <module>TIBCOApplicationClient</module>
     <module>TIBCOBindingClient</module>
     <module>TIBCOEnvClient</module>
     <module>TIBCONodeClient</module>
     <module>TIBCOEndpointClient</module>
+    <module>TibcoManager</module>
+    <module>TibcoManager.ui</module>
   </modules>
 </project>
