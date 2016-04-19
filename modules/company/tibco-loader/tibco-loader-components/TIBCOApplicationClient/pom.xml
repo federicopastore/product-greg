@@ -3,8 +3,7 @@
 <groupId>it.bnl.tibco</groupId>
 <artifactId>mvn-amx-application-client</artifactId>
 <version>1.0.0</version>
-<packaging>bundle</packaging>
-<name>TIBCO application wsdl client</name>
+<name>mvn application amx client</name>
 
     <profiles>
         <profile>
@@ -54,6 +53,8 @@
             </releases>
         </repository>
     </repositories>
+	
+
 <build>
     <plugins>
 	<plugin>
@@ -75,17 +76,52 @@
                         <goal>wsdl2code</goal>
                     </goals>
                     <configuration>
-                        <packageName>com.tibco.client.application</packageName>
+                        <packageName>com.tibco.amf.admin.api.amx.application</packageName>
                         <wsdlFile>ApplicationService.wsdl</wsdlFile><!-- TODO: Update this file with new WSDL versions -->
 						<databindingName>adb</databindingName>
 						<syncMode>sync</syncMode>
-						<unwrap>true</unwrap>
-						<unpackClasses>true</unpackClasses>
                     </configuration>
                 </execution>
             </executions>
         </plugin>
-        <plugin>
+		<!-- Copies the necessary resources for compile phase -->
+			<!--plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>copy-code</id>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${basedir}/target/classes/META-INF</outputDirectory>
+							<resources>
+								<resource>
+									<directory>${basedir}/target/generated-sources/axis2/wsdl2code/resources</directory>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+					<execution>
+						<id>copy-xmlbeans</id>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<encoding>UTF-8</encoding>
+							<outputDirectory>${basedir}/target/classes/schemaorg_apache_xmlbeans</outputDirectory>
+							<resources>
+								<resource>
+									<directory>${basedir}/target/generated-sources/axis2/wsdl2code/resources/schemaorg_apache_xmlbeans</directory>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin-->
+            <plugin>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>maven-bundle-plugin</artifactId>
                 <extensions>true</extensions>
@@ -95,11 +131,7 @@
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Name>${project.artifactId}</Bundle-Name>
                         <Export-Package>
-							com.tibco.client.application;version="1.0.0",
-							com.tibco.amf.admin.api.core.types.xsd;version="1.0.0",
-							com.tibco.amf.admin.api.amx.application;version="1.0.0",
-							com.tibco.amf.admin.api.amx.application.xsd;version="1.0.0",
-							com.tibco.amf.admin.api.amx.binding.xsd;version="1.0.0"
+                            com.tibco.amf.admin.api.amx.application;version="1.0.0"                         
                         </Export-Package>
                          <Import-Package>
                          	javax.xml.namespace; version="1.2.11.wso2v6"; resolution:=optional,

@@ -5,12 +5,12 @@
   <parent>
     <groupId>it.company.wso2.registry.integrations.tibco</groupId>
     <artifactId>TibcoManager.features</artifactId>
-    <version>1.0</version>
+    <version>1.0.0</version>
 	<relativePath>../pom.xml</relativePath>
   </parent>
   <groupId>it.company.wso2.registry.integrations.tibco</groupId>
   <artifactId>TibcoManager.server.feature</artifactId>
-  <version>1.0</version>
+  <version>1.0.0</version>
   <name>TibcoManager.server.feature</name>
   <url>http://maven.apache.org</url>
 	<packaging>pom</packaging>

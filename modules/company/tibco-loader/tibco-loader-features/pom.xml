@@ -9,19 +9,19 @@
   </parent>
   <groupId>it.company.wso2.registry.integrations.tibco</groupId>
   <artifactId>TibcoManager.features</artifactId>
-  <version>1.0</version>
+  <version>1.0.0</version>
   <name>Tibco Manager aggregate features</name>
   <url>http://maven.apache.org</url>
   <packaging>pom</packaging>
   
-     <!--dependencies>
+     <dependencies>
         <dependency>
-            <groupId>org.wso2.carbon</groupId>
+            <groupId>it.company.wso2.registry.integrations.tibco</groupId>
             <artifactId>TibcoManager.server.feature</artifactId>
-            <version>1.0</version>
-
+            <version>1.0.0</version>
+			<type>zip</type>
         </dependency>
-    </dependencies-->
+    </dependencies>
   
     <build>
         <plugins>
@@ -44,9 +44,9 @@
                                     <propertyDef>org.eclipse.equinox.p2.type.group:true</propertyDef>
                                 </properties>
                             </adviceFile>
-                            <!--includedFeatures>
-                                <includedFeatureDef>it.company.wso2.registry.integrations.tibco:TibcoManager.server.feature</includedFeatureDef>
-                            </includedFeatures-->
+                            <includedFeatures>
+                                <includedFeatureDef>it.company.wso2.registry.integrations.tibco:TibcoManager.server.feature:1.0.0</includedFeatureDef>
+                            </includedFeatures>
                         </configuration>
                     </execution>
                 </executions>
@@ -73,8 +73,8 @@
             </plugin>
         </plugins>
     </build>
-  <modules>
+  <!--modules>
     <module>TibcoManager.server.feature</module>
     <module>TibcoManager.mgt.feature</module>
-  </modules>
+  </modules-->
 </project>

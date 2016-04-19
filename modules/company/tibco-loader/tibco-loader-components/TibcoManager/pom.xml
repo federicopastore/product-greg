@@ -96,6 +96,21 @@
 
   <dependencies>
 	<dependency>
+		<groupId>it.bnl.tibco</groupId>
+		<artifactId>mvn-amx-application-client</artifactId>
+		<version>${tibco.client.version}</version>
+	</dependency>
+			<dependency>
+		<groupId>it.bnl.tibco</groupId>
+		<artifactId>mvn-amx-binding-client</artifactId>
+		<version>${tibco.client.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>it.bnl.tibco</groupId>
+		<artifactId>mvn-amx-endpoint-client</artifactId>
+		<version>${tibco.client.version}</version>
+	</dependency>
+	<dependency>
 		<groupId>org.apache.axis2.wso2</groupId>
 		<artifactId>axis2</artifactId>
 		<version>1.6.1.wso2v10</version>
@@ -117,6 +132,8 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  
+  <properties>
+	<tibco.client.version>1.0.0</tibco.client.version>
+  </properties>
   
 </project>

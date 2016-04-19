@@ -76,7 +76,13 @@
                             <publishArtifacts>true</publishArtifacts>
                             <publishArtifactRepository>true</publishArtifactRepository>
                             <featureArtifacts>
-
+								<featureArtifactDef>
+                                    it.company.wso2.registry.integrations.tibco:TibcoManager.features:1.0.0
+                                </featureArtifactDef>
+								<featureArtifactDef>
+                                    it.company.wso2.registry.integrations.tibco:TibcoManager.server.feature:1.0.0
+                                </featureArtifactDef>
+								
                                 <featureArtifactDef>
                                     org.wso2.carbon.metrics:org.wso2.carbon.metrics.feature:${carbon.metrics.version}
                                 </featureArtifactDef>
@@ -465,14 +471,6 @@
                                     org.wso2.ciphertool:org.wso2.ciphertool.feature:${ciphertool.version}
                                 </feaureArtifactDef>
                             </featureArtifacts>
-							
-							
-				<!-- Company feature -->
-				<!--
-                                <feaureArtifactDef>
-                                    it.company.wso2.registry.integrations.tibco:TibcoManager.features:1.0
-                                </feaureArtifactDef>
-							-->
                         </configuration>
                     </execution>
                     <execution>
@@ -538,7 +536,10 @@
                             </destination>
                             <deleteOldProfileFiles>true</deleteOldProfileFiles>
                             <features>
-
+								<feature>
+                                    <id>TibcoManager.features.feature.group</id>
+                                    <version>1.0.0</version>
+                                </feature>
                                 <feature>
                                     <id>org.wso2.carbon.metrics.feature.group</id>
                                     <version>${carbon.metrics.version}</version>
@@ -1036,7 +1037,10 @@
                             </destination>
                             <deleteOldProfileFiles>true</deleteOldProfileFiles>
                             <features>
-
+								<feature>
+                                    <id>TibcoManager.features.feature.group</id>
+                                    <version>1.0.0</version>
+                                </feature>
                                 <feature>
                                     <id>org.wso2.carbon.metrics.feature.group</id>
                                     <version>${carbon.metrics.version}</version>
@@ -1374,7 +1378,10 @@
                             </destination>
                             <deleteOldProfileFiles>true</deleteOldProfileFiles>
                             <features>
-
+                                <feature>
+                                    <id>TibcoManager.features.feature.group</id>
+                                    <version>1.0.0</version>
+                                </feature>
                                 <feature>
                                     <id>org.wso2.carbon.metrics.feature.group</id>
                                     <version>${carbon.metrics.version}</version>

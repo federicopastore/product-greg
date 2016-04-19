@@ -3,7 +3,6 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 import org.apache.axis2.client.Options;
 import org.apache.commons.httpclient.Header;
@@ -13,8 +12,6 @@ import org.apache.commons.httpclient.NameValuePair;
 import org.apache.commons.httpclient.methods.PostMethod;
 import org.apache.commons.io.IOUtils;
 import org.wso2.carbon.governance.api.wsdls.WsdlManager;
-import org.wso2.carbon.governance.api.wsdls.dataobjects.Wsdl;
-import org.wso2.carbon.governance.api.wsdls.dataobjects.WsdlImpl;
 import org.wso2.carbon.registry.core.exceptions.RegistryException;
 import org.wso2.carbon.registry.core.internal.RegistryCoreServiceComponent;
 import org.wso2.carbon.registry.core.session.UserRegistry;
