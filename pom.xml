@@ -45,20 +45,22 @@
 
     <modules>
         <module>modules/styles</module>
-        <module>modules/dashboard</module>
+        <!--module>modules/dashboard</module-->
         <module>modules/checkin-client</module>
+        <module>modules/caramel</module>
+	<!--module>modules/checkin-client</module-->
         <module>modules/juddi/juddi-listener</module>
         <module>modules/juddi/juddiv3-war</module>
+	<!--module>modules/checkin-client</module-->
         <module>modules/cmis/cmis-war</module>
-        <module>modules/samples</module>
+        <module>modules/company</module>
+        <!--module>modules/samples</module-->
         <module>modules/features</module>
         <module>modules/p2-profile-gen</module>
         <!--module>modules/source</module-->
-
         <module>modules/login</module>
-        <module>modules/distribution/src/main/resources/statistics</module>
+        <!--module>modules/distribution/src/main/resources/statistics</module-->
         <module>modules/distribution</module>
-        <module>modules/integration</module>
     </modules>
     <dependencyManagement>
         <dependencies>
@@ -773,7 +775,7 @@
             <name>Apache Snapshot Repository</name>
             <url>http://maven.wso2.org/nexus/content/repositories/snapshots/</url>
             <snapshots>
-                <enabled>true</enabled>
+                <enabled>false</enabled>
                 <updatePolicy>daily</updatePolicy>
             </snapshots>
             <releases>
@@ -804,7 +806,7 @@
             <name>Apache Snapshot Repository</name>
             <url>http://maven.wso2.org/nexus/content/repositories/snapshots/</url>
             <snapshots>
-                <enabled>true</enabled>
+                <enabled>false</enabled>
                 <updatePolicy>daily</updatePolicy>
             </snapshots>
             <releases>
